@@ -26,3 +26,11 @@
 ### Task Tracking 
 * go in GitHub repo 
 * issues - new issues 
+* when commit just type - git commit -m "Pojo create. Closes #2". So issue #2 will be closed in github.
+
+### Project starting
+* create model
+  * create package 'model' and add entities
+  * put @Getter and @Setter annotations 
+* create multi module maven build
+  * click project - new module - new module - project name
