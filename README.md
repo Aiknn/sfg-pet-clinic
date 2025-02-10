@@ -34,3 +34,13 @@
   * put @Getter and @Setter annotations 
 * create multi module maven build
   * click project - new module - new module - project name
+  * create 2 modules (pet-clinic-data & pet-clinic-web)
+  * migrate info to pet-clinic-data
+    * model package with all files  
+    * move to pom next dependencies for h2database, mysql, projectlombok + all plugins
+    * add to pom - properties - spring-boot.repackage.skip - true
+  * migrate info to pet-clinic-web
+    * main application file
+    * resources folder with all files 
+    * test folder with all files 
+    * move to pom next dependencies - pet-clinic-data, actuator, thymeleaf, web, devtools
