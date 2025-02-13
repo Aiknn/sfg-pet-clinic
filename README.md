@@ -44,3 +44,18 @@
     * resources folder with all files 
     * test folder with all files 
     * move to pom next dependencies - pet-clinic-data, actuator, thymeleaf, web, devtools
+* adding maven release plugin 
+  * go to root POM and add plugin
+    * groupId: org.apache.maven.plugins
+    * artifactId: maven-release-plugin
+    * version: 3.0.1
+    * configuration:
+      * goals: install
+      * autoVersionSubmodules: true
+  * go to root POM and add
+    * scm: 
+      * developerConnection: scm:git:https://github.com/Aiknn/sfg-pet-clinic.git
+  * commit all changes
+  * mvn clean
+  * mvn release:prepare
+  * mvn release:perform
