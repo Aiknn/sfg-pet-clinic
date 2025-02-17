@@ -65,3 +65,8 @@
     * Owner findById(Long id); 
     * Owner save(Owner owner); 
     * Set<Owner> findAll();
+* base entity class
+  * create - BaseEntity implements Serializable
+    * should consist Long id
+    * getters and setters for id
+  * all model entities must extend from base entity  
