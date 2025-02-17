@@ -59,3 +59,9 @@
   * mvn clean
   * mvn release:prepare
   * mvn release:perform
+* service lair 
+  * pet-clinic-data (package: services)
+  * create interfaces for all models (example below)
+    * Owner findById(Long id); 
+    * Owner save(Owner owner); 
+    * Set<Owner> findAll();
