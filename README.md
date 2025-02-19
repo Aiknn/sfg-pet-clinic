@@ -70,3 +70,14 @@
     * should consist Long id
     * getters and setters for id
   * all model entities must extend from base entity  
+
+### Refactoring Service Layer
+* create CrudService<T, ID> interface and add
+  * Set<T> findAll(); 
+  * T findById(ID id); 
+  * T save(T object); 
+  * void delete(T object); 
+  * void deleteById(ID id);
+* refactor other services
+  * make it extend from CrudService<Class, Long>
+  * delete all methods which duplicates in CrudService  
