@@ -5,8 +5,8 @@
 * go terminal and cd to projects workplace 
 * terminal - git clone link from GitHub
 * go IDE - new project - Spring Initializer - new project
-* change folder to the one we created while cloning (don't cd to folder created by cloning, just make names the same)
-* choose JAR + check java version
+* change folder to the one where cloned folder located (don't cd to folder - ignore warning)
+* choose JAR + maven + check java version
 * select dependencies:
     * Spring Boot devTools
     * Lombok
