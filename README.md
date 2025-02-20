@@ -87,3 +87,11 @@
 * create in map package - AbstractMapService<T, ID> with HashMap
 * also create OwnerServiceMap, PetServiceMap, VetServiceMap - extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long>
 
+### Index Page and Controller
+* create in pet-clinic-web
+* templates - index.html
+  * xmlns:th="http://www.thymeleaf.org"
+  * h1 th:text="'Index Page1'"
+* controllers - IndexController
+  * add @Controller
+  * add @RequestMapping to method which returns "index"
