@@ -80,4 +80,10 @@
   * void deleteById(ID id);
 * refactor other services
   * make it extend from CrudService<Class, Long>
-  * delete all methods which duplicates in CrudService  
+  * delete all methods which duplicates in CrudService
+
+### Implement Map Based Service
+* create package in services - map
+* create in map package - AbstractMapService<T, ID> with HashMap
+* also create OwnerServiceMap, PetServiceMap, VetServiceMap - extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long>
+
