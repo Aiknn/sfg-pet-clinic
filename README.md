@@ -95,3 +95,23 @@
 * controllers - IndexController
   * add @Controller
   * add @RequestMapping to method which returns "index"
+
+### Create Data Loader
+* add bootstrap package to pet-clinic-web
+* create public class DataLoader implements CommandLineRunner
+* that class consist private final VetService vetService and other services
+* also add empty constructor which initiates vetService = new VetServiceMap()
+* in run method add
+  * Vet vet1 = new Vet();
+  * vet1.setId(1L);
+  * vet1.setFirstName("Sam");
+  * vet1.setLastName("Axe");
+  * vetService.save(vet1);
+
+### Spring Config for Services
+* add @Service annotation to PetServiceMap, OwnerServiceMap, etc
+* in DataLoader changed constructor 
+  * public DataLoader(OwnerService ownerService, VetService vetService) { 
+  * this.ownerService = ownerService; 
+  * this.vetService = vetService;
+* and now as u see we use only interfaces, due to @Service annotation it will do it behind the scenes
