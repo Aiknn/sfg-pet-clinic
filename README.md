@@ -85,7 +85,7 @@
 ### Implement Map Based Service
 * create package in services - map
 * create in map package - AbstractMapService<T, ID> with HashMap
-* also create OwnerServiceMap, PetServiceMap, VetServiceMap - extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long>
+* also create OwnerServiceMap, PetServiceMap, VetServiceMap - extends AbstractMapService<Owner, Long> implements OwnerService
 
 ### Index Page and Controller
 * create in pet-clinic-web
