@@ -114,4 +114,17 @@
   * public DataLoader(OwnerService ownerService, VetService vetService) { 
   * this.ownerService = ownerService; 
   * this.vetService = vetService;
-* and now as u see we use only interfaces, due to @Service annotation it will do it behind the scenes
+* and now as u see we use only interfaces, due to @Service annotation it will find implementation class behind the scenes
+
+### List Page
+* change OwnerController
+  * add: private final OwnerService ownerService + its construction 
+  * add Model model - to public String listOwners(Model model)
+  * in body - model.addAttribute("owners", ownerService.findAll());
+* in owners/index page add:
+  * in body, but should be comitted: *@thymesVar id="owner" type="guru.springframework.sfgpetclinic.model.Owner"*
+  * tr th:each="owner : ${owners}"
+    * th th:text="${owner.id}"
+    * th th:text="${owner.firstName}"
+* run and check localhost:8080/owners
+
