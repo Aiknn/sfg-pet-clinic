@@ -128,3 +128,8 @@
     * th th:text="${owner.firstName}"
 * run and check localhost:8080/owners
 
+### Auto Generated Map ID
+* change code in AbstractMapService
+* update code in OwnerServiceMap and other Map Services
+* in DataLoader class delete info about id
+* re-run and check 
