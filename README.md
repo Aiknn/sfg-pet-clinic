@@ -122,7 +122,7 @@
   * add Model model - to public String listOwners(Model model)
   * in body - model.addAttribute("owners", ownerService.findAll());
 * in owners/index page add:
-  * in body, but should be comitted: *@thymesVar id="owner" type="guru.springframework.sfgpetclinic.model.Owner"*
+  * in body, but should be comitted: *@thymesVar id="owner" type="guru.springframework.sfgpetclinic.model.Owner"* - we need this to tell IDE that it is var
   * tr th:each="owner : ${owners}"
     * th th:text="${owner.id}"
     * th th:text="${owner.firstName}"
